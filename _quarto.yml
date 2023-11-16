@@ -1,0 +1,30 @@
+project:
+  output-dir: _output
+
+title-block-banner: true
+toc: true
+number-sections: true
+crossref: 
+  chapters: false
+
+reference-section-title: references
+
+bibliography: C:\\Users\\ccccr\\repo\\documentation\\library\\myBibliography.bib
+link-citations: true
+colorlinks: true
+
+format:
+  html:
+    mainfont: EB Garamond
+    sansfont: EB Garamond
+    mathfont: Garamond-Math
+    CJKmainfont: 思源宋体
+    monofont: Cascadia Code
+
+  # pdf:
+  #   documentclass: scrreprt
+  #   mainfont: EB Garamond
+  #   sansfont: EB Garamond
+  #   mathfont: Garamond-Math
+  #   CJKmainfont: 思源宋体
+  #   monofont: Cascadia Code
