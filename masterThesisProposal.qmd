@@ -18,7 +18,170 @@ In fig a & b there is a classic sensorimotor loop. Environment state [***W~1~***
 Information theory tells us that information is inseparable from a lack of predictability. If something is predictable before observing it, it cannot give us much information. Conversely, to maximize the rate of information transfer, the message must be minimally predictable and hence minimally redundant. Predictive coding as a means to remove redundancy in a signal was first applied in signal processing, where it was used to reduce transmission bandwidth for video transmission. Predictive coding offers a potentially unifying account of cortical function – postulating that the core function of the brain is to minimize prediction errors with respect to a generative model of the world. The theory is closely related to the Bayesian brain framework and, over the last two decades, has gained substantial influence in the fields of theoretical and cognitive neuroscience. 
 
 ## Virtual reality and neuroscience
-In order to study the correlation between early sensory cortex and motor or other higher cognitive functions, this poses new requirements for our experimental setup: we need a method that allows for precise recording of brain activity while animals are in a awake and behaving state. As far back as the 1960s, biologists studying movement tethered fruit flies` heads while the insects walked on ping-pong balls. A technical breakthrough came in 2009, when David Tank and colleagues recorded hoppocampal cells intracellularly while a mouse was running on spherical floating ball linked to a virtual reality stimulus generator[@harveyIntracellularDynamicsHippocampal2009]. The technology offered a way to observe brain activity in animals that could be fooled into thinking they were roaming freely, even though their heads were held still. That allowed the use of intricate brain-recording techniques - such as electrical recordings from inside neurons, or optical microscopy to image large numbers of meurons[@drewMouseVideoGame2019]. With combinations of wide-field two-photon and Neuropixel recording the latest studies are conclusive: V~1~ is not a low-level sensory filter, and is strongly driven by motor and other task behaviour[@saleemCoherentEncodingSubjective2018; @devriesLargescaleStandardizedPhysiological2020; @mcbrideLocalGlobalInfluences2019; @musallSingletrialNeuralDynamics2019; @stringerSpontaneousBehaviorsDrive2019]. Particularly for ongoing trial-by-trial variability, motor activity dominates[@musallSingletrialNeuralDynamics2019; @stringerSpontaneousBehaviorsDrive2019]. Georg Keller’s lab has demonstrated how predictive motor task signals are present and fed back from motor to visual areas to substantially alter processing[@attingerVisuomotorCouplingShapes2017; @fiserExperiencedependentSpatialExpectations2016; @zmarzMismatchReceptiveFields2016; @leinweberSensorimotorCircuitMouse2017; @heindorfMouseMotorCortex2018]. They used a variety of visual task designs, such as visual-flow learnging[@attingerVisuomotorCouplingShapes2017], expectation-violation [@zmarzMismatchReceptiveFields2016], and sensory remapping [@leinweberSensorimotorCircuitMouse2017; @heindorfMouseMotorCortex2018] to dissociate incoming visual information from the motor task demands. Combined with these clever sensory dissociations only possible due to VR.
+
+In order to study the correlation between early sensory cortex and motor or other higher cognitive functions, this poses new requirements for our experimental setup: we need a method that allows for precise recording of brain activity while animals are in a awake and behaving state. As far back as the 1960s, biologists studying movement tethered fruit flies` heads while the insects walked on ping-pong balls. A technical breakthrough came in 2009, when David Tank and colleagues recorded hoppocampal cells intracellularly while a mouse was running on spherical floating ball linked to a virtual reality stimulus generator[@harveyIntracellularDynamicsHippocampal2009]. The technology offered a way to observe brain activity in animals that could be fooled into thinking they were roaming freely, even though their heads were held still. That allowed the use of intricate brain-recording techniques - such as electrical recordings from inside neurons, or optical microscopy to image large numbers of meurons[@drewMouseVideoGame2019]. With combinations of wide-field two-photon and Neuropixel recording the latest studies are conclusive: V~1~ is not a low-level sensory filter, and is strongly driven by motor and other task behaviour[@saleemCoherentEncodingSubjective2018; @devriesLargescaleStandardizedPhysiological2020; @mcbrideLocalGlobalInfluences2019; @musallSingletrialNeuralDynamics2019; @stringerSpontaneousBehaviorsDrive2019]. Particularly for ongoing trial-by-trial variability, motor activity dominates[@musallSingletrialNeuralDynamics2019; @stringerSpontaneousBehaviorsDrive2019]. Georg Keller’s lab has demonstrated how predictive motor task signals are present and fed back from motor to visual areas to substantially alter processing[@attingerVisuomotorCouplingShapes2017; @fiserExperiencedependentSpatialExpectations2016; @zmarzMismatchReceptiveFields2016; @leinweberSensorimotorCircuitMouse2017; @heindorfMouseMotorCortex2018]. They used a variety of visual task designs, such as visual-flow learnging[@attingerVisuomotorCouplingShapes2017], expectation-violation [@zmarzMismatchReceptiveFields2016], and sensory remapping [@leinweberSensorimotorCircuitMouse2017; @heindorfMouseMotorCortex2018] to dissociate incoming visual information from the motor task demands. Combined with these clever sensory dissociations only possible due to VR. What makes VR especially powerful is the ability to manipulate factors in the environment as desired while keeping others constant. Simulations can even create the illusion of altering the laws of physics. In the natural world, when an animal runs at a specific speed, its visual inputs change accordingly. However, in VR, this connection can be disrupted.
 
 # Development status and trends in this discipline
 
+## VR devices
+
+### Mice
+
+Researchers reported a prototype VR system for rats as early as 2005[@holscherRatsAreAble2005]. But the approach went mainstream after David Tank built VR simulators for mice[@harveyIntracellularDynamicsHippocampal2009]. Tank was studying the mouse’s intrinsic navigation system: cells in the hippocampus and nearby brain regions that help an animal to track its position in space. And Tank wanted to work out finer details of how neurons fired by using delicate intracellular electrodes. These required an animal’s head to be held still, leaving little for its navigational system to track. So Tank, together with Chris Harvey, developed a virtual world rich enough to create a sense of moving around space. In 2009, the group reported its mouse VR system in a study that, for the first time, described the inner workings of hippocampal neurons as they created a map of space from multiple streams of sensory inputs[@harveyIntracellularDynamicsHippocampal2009]. That research has led to a surge in papers on mammalian VR in the past few years. In Sofroniew experimental setup mice walk in complete darkness on a treadmill; panels flanking the whiskers move in and out to give the animals the impression of moving down a constricting and expanding tunnel[@sofroniewNaturalWhiskerGuidedBehavior2014]. In Radvansky experimental setup mice follow odours that get weaker or stronger depending on how they run on a spherical treadmill[@radvanskyOlfactoryVirtualReality2018]. In 2015, Mayank Mehta, reported that hippocampal neurons fired differently — and to a lesser extent — when rats explored a 2D VR system, compared with when the rodents walked around a real-world replica room[@aghajanImpairedSpatialSelectivity2015]. Metha thinks that in the real world the synchronized changing of tactile, smell and sound cues, together with the rat’s ability to move its head and body naturally, engages the animal’s navigational system in a different way from in the simulation. But Mehta’s points haven’t significantly dented interest in VR. 2023 Matthew Isaacson reported on their latest VR system, the first miniaturized VR headset for mice[@isaacsonMouseGogglesImmersiveVirtual2023].
+
+### Zebrafish
+
+Michael Orger reported on a study[@orgerControlVisuallyGuided2008] where a behavioral assay was developed to identify visual stimuli that drove basic motor patterns in zebrafish. Functional two-photon microscopy was utilized to monitor the activity in large populations of neurons during visual stimulation in agarose-embedded zebrafish. This work served as the foundation for a subsequent closed-loop version of this paradigm, as described by [@portuguesAdaptiveLocomotorBehavior2011]. Additionally, this study demonstrated the application of a closed-loop visual feedback system to monitor fish swimming in a small arena. Ruben Portugues reported on a study where visual closed-loop virtual reality was demonstrated for head-restrained larval zebrafish. The authors characterized a variety of open and closed-loop visual responses based on tail movements, revealing that the larvae quickly adapted their motor output in response to changes in the closed-loop coupling[@portuguesAdaptiveLocomotorBehavior2011]. Kuo-Hua Huang reported on a VR system that can be used on adult zebrafish. They installed a set of crossbars on the fish's skull and mounted them on both sides of the VR water tank. A screen was installed in front of the subject to simulate rocks, other fish, and other stimuli[@huangVirtualRealitySystem2020].
+
+### non-human primate
+
+Virtual reality study for non-human primates may have started very early. As early as 1999, Nobuhisa Matsumura reported using a setup similar to modern VR devices for conducting research[@matsumuraSpatialTaskDependentNeuronal1999]. However, the development of VR devices for use in non-human primates has been very slow. It wasn't until 2017, as reported by Rueckemann JW, that a similar setup was still being used[@rueckemannSpatialResponsesImmediate2017; @horiPlacerelatedNeuralResponses2005]. The existing VR platforms for non-human primates are similar to those used for mice. They involve surrounding the subject with multiple displays to fill their entire field of view. However, due to the size limitations of non-human primates, the spherical treadmill used in mouse experiments to represent the subject's movement in the virtual environment cannot be directly applied to primate experiments. As an alternative, a joystick is often utilized in primate experimental setups to simulate the subject's movement in the virtual environment. 
+
+## Research based on VR
+
+Neuroscientists have long wanted to know whether an animal’s sense of moving through space is swayed more by internal signals about its own movement, or by what it sees[@drewMouseVideoGame2019]. In 2018, Lisa Giocomo at Stanford University in California looked at neurons that feed into the hippocampus, and showed in a VR experiment that when the outside world is whipping by at great speed — such as when an animal is running through a forest, looking at nearby trees — visual cues dominate this part of the navigational system. When these signals move more slowly, as when an animal is gauging its position relative to a distant mountain range, signals generated by the animal’s own movement take over[@campbellPrinciplesGoverningIntegration2018].
+
+In 2016, Keller's labs reported that when a small part of a virtual corridor does not move in synchrony with the mouse's movement, a subset of what he calls "mismatch cells" start to fire[@zmarzMismatchReceptiveFields2016]. Their data convincingly demonstrates that the predictive machinery that generates internal models sends predictions back to early sensory areas[@kellerPredictiveProcessingCanonical2018], as expected by the predictive coding hypothesis[@mumfordComputationalArchitectureNeocortex1992; @raoPredictiveCodingVisual1999a; @fristonTheoryCorticalResponses2005; @yuilleVisionBayesianInference2006; @clarkWhateverNextPredictive2013].
+
+In 2018, Saleem published a study revealing that cells in the hippocampus that track where the mouse has run along the hallway are somehow changing how cells in the visual cortex fire. In other words, the mouse’s neural representation of two identical scenes differs, depending on where it perceives itself to be[@saleemCoherentEncodingSubjective2018]. In the same year, neuroscientist Nathalie Rochefort at the University of Edinburgh, UK, reported similar result. After providing mice with a reward, specifically a squirt of water to quench their thirst, at a specific point in a virtual corridor, the representation of that corridor in the visual cortex underwent a significant change. Initially, all regions of the corridor generated equal amounts of neural activity in the visual cortex. However, once the 'reward zone' gained significance, the majority of visual cortical neurons started firing predominantly in that area[@pakanImpactVisualCues2018].
+
+Huang's lab utilized a setup similar to the virtual prism experiment, where they manipulated the left-right rotation perception of the subjects in the virtual environment. This means that if the subjects attempted to turn right, the visual stimuli presented in the VR would create an illusion of turning left. When this anomaly occurred, zebrafish exhibited strong body responses, characterized by a significant increase in tail movement compared to normal input. Additionally, the researchers observed that the subjects immediately reacted after receiving the stimuli, indicating a noticeable delay between the brain detecting the error and responding to realign[@huangVirtualRealitySystem2020]. This suggests that predictive modulation is conserved across vertebrates.
+
+# Main content & goals
+
+The results so far demonstrate that visual perception, as measured psychophysically, depends on the active task and prior knowledge of the subjects. We believe that this has the chance to substantially impact systems neuroscience in non-human primates, where there is still a substantial gap in naturalistic task behaviours that can be explored through careful experimentation. This project focusses on how early sensory representations are affected by concomitant motor tasks. We have three main experimental manipulations. The experiment will be divided into two parts: behavioral experiments and electrophysiological experiments.
+
+## Basics
+
+- We have designed a set of virtual environments with varying numbers of visual cues and trained the subject to actively navigate within these virtual environments. Different tasks will be incorporated into the environment, requiring subject to rely on visual cues to complete them and obtain rewards.
+- The virtual environments used in different experiments will be consistent, allowing the subject to build a spatial map and develop expectations about the environment. The majority of the data will be collected within this consistent environment map.
+- During the electrophysiological experiment phase, we will implant electrodes in the V1 brain region of the subject. There is a large body of evidence from human EEG and fMRI experiments, and some primate studies, that V1 is substantially modulated by various higher cognitive task contingencies. But most of these studies are all performed with subjects restricted in their movements, and therefore we think underestimate the potential for V1 activation during cognitive tasks that engage the full sensorimotor loop.
+- We will map V1 response fields and stimulus preferences using classical fixation + stimulation in primate chairs. This will tell us what parts of the visual field and orientation/direction/colour etc. preferences are being sampled. This classical mapping will be performed whenever we think probes may have shifted position. Next we will record V1 population activity while our subjects engage in the VR environment. To control visual stimulation we will use statistically controlled parametric textures on the surfaces of objects and walls and classical probe stimuliti.
+
+## Tasks
+
+- Asynchronous objects: Similar to Zmarz & Keller (CDEZ), we will add objects in the virtual maze that transiently do not obey lawful behaviour related to the subjects motion, but move asynchronously to self-motion. Such objects are clear and surprising violations of lawful expectation, and the motor task equivalent of spatial pop-out. Based on the results in mouse, and human fMRI, we expect surprise to be measured both behaviourally and neurally.
+- Transient lights-out: When the subject performs tasks in its familiar environment, we will actively terminate the visual stimuli provided to the subject by controlling the headset. In this scenario, the subject must rely on spatial memory to complete the task.
+- Virtual prism adaptation: After a subject is trained and proficient in the virtual environment, we will shift the visual to motor mapping by e.g. 20° or even completely invert the motor↔vision control in a manner similar to the effects of adapting to wearing different classes of prisms in humans and monkeys. There are many interesting perturbations, but we will focus on visual shifts and/or left-right inversion.
+
+## Goals
+
+### WHAT Effect Volitional Self-motion has on Behaviour/Perception?
+
+1. Asynchronous objects: Lawful object violations will be salient and will immediately attract visual attention. This will cause eye movements to the object, and possibly body reorienting driven by expectation violations and surprise signals from sensory cortex. We should be able to “boost” otherwise low contrast inputs and resultant psychometric curves dues to this novel form of pop-out.
+2. Transient lights-out: In the mouse, some investigators have focussed on VK activity in the dark. But it would be more interesting to randomly turn off visual inputs during ongoing task execution. The subject would be using visual cues and navigating a known environment when suddenly lights out means they would have to rely on spatial memory to obtain a reward. Under the predictive coding hypothesis, predictions would still be being used, just without the prediction errors that are normally propagated forwards. We will test this with various contrast probes in the otherwise dark environment. We believe subject will perform well during transient light-out periods to obtain reward, even while the cortical representations are different.
+3. Virtual prism adaptation: Since Helmholtz first studied them, wearing prisms have had a long history of use in testing models of perception and action. Classically, wearing prisms that shift the visual input or even completely invert it causes severe impairment for action followed by a period of adaptation and performance recovery after extended prism wearing. VR systems can easily perform these kinds of shifts, and can be done within a session so you can track the baseline, early and immediate adaptation phases. It is unlikely we can obtain full adaptation, but we will be able to test early adaptation responses. Heindorf et al. (CDET) used transient perturbations to study motor cortex responses, which may also be interesting to study here.
+
+### HOW self-motion influences V1?
+
+Once we have establish the baseline V1 population activity during self-motion in the immersive VR environment, We can test the series of task modifications studies in our all tasks. These tasks aim to modify expectations driven by the inputs for the same stimuli. For example, an object can be lawful or unlawful as it passes through the response field.
+
+1. Asynchronous objects: Motor predictions and their lawful violations will substantially drive / modulate V1 activity.
+2. Transient lights-out: Residual V1 activity will be present, replaying the sequence of activation present during vision-normal trial on the same task trajectory (substantially correlated).
+3. Virtual prism adaptation: V1 populations will show evidence of remapping consistent with behavioural adaptation during task execution.
+
+# Methods, Key Skills, Feasibility and Challenges
+
+## VR Headset
+
+### Display
+
+Nowdays, human-oritented VR headset has been very mature. There are three key points identidied from the development of it.
+
+- Resolution: Too low a resolution can cause a screen-door effect that destroys the sense of presence that destroys the sense of presence.
+- Refresh rate: Too low a refresh rate can cause severe vertigo in users.
+- IPD: IPD is one of the major restrictions limiting the migration of human VR headset to non-human primates.
+ 
+### Solution
+
+Due to the rapid development of Micro-OLED technology, we can now obtain products that are extremely small in size but have excellent performance. Our display is from Seyaa company. It measures only 1.03 inches, but it boasts a resolution of 2560*2560 and a refresh rate of 90Hz. The latest Pancake optical technology enables us to achieve an IPD (Interpupillary Distance) below 40mm. Our optical solution supports a minimum IPD of 38mm and offers IPD adjustment within the range of 38-50mm.
+
+## Orientation tracking
+
+The core of VR is the tracking of the user's head orientation. There are several feasible solutions:
+
+- Optical tracking: Using infrared or laser sensors to track the position and orientation of the user's head.
+- Inertial Measurement Unit (IMU): using sensors such as accelerometers and gyroscopes to measure the acceleration and angular velocity of the head, inferring changes in head orientation. Due to the issues related to blind spots and space occupancy associated with optical tracking solutions, we have decided to opt for the IMU solution.
+
+### Solution
+
+We are utilizing a 9-axis IMU, which consists of a three-axis accelerometer, a three-axis gyroscope, and a three-axis magnetometer. By employing the Kalman filtering algorithm, we fuse data from multiple sensors to obtain the final orientation.
+
+## Positioning
+
+A VR device with only core functionalities has 3 degrees of freedom (pitch, roll, yaw), and users cannot move within the virtual space. We need to provide users with methods of movement within the virtual space. 
+
+### Solution
+
+1. Joystick solution: The subject uses a joystick to control their own movement in a virtual environment.
+2. VR treadmill solution: This is a treadmill that does not impose restrictions on the direction of movement for the subject.
+3. Inside-out tracking solution: Based on the SLAM3 localization algorithm, it can synchronize the movement of the subject in both the real and virtual environments.
+
+## Eye-tracker
+
+Our headset has an built-in eye-tracker from Pupil Lab. It remains stationary relative to the subject's head, allowing for eye tracking data to be captured even when the subject's head is not fixed.
+
+## Driver
+
+### OpenXR
+
+OpenXR is an open and royalty-free standard for creating and accessing virtual reality (VR) and augmented reality (AR) applications across multiple platforms and devices. It provides a common API that allows developers to build immersive experiences that are compatible with various hardware and software platforms, enabling interoperability and portability in the XR (Extended Reality) ecosystem. We have implemented support for OpenXR through OpenVR as the OpenXR runtime. 
+
+### Real Time Operating System
+
+To reduce the overall system latency, we have integrated FreeRTOS as our real-time operating system (RTOS). Unlike operating systems like Linux and Windows, which do not guarantee real-time behavior, an RTOS such as FreeRTOS is specifically designed to provide deterministic and predictable timing. For example, in Windows, the scheduling period is typically around 15ms, which can significantly disrupt real-time data recording when thread context switches occur. By using FreeRTOS, we can mitigate this issue and maintain the real-time performance required for accurate experimental data acquisition. 
+
+### Scalability
+
+To enable flexible configuration of VR devices in various scenarios, we have implemented a network API using ZMQ. This allows seamless integration with tools such as PsychToolBox or PsychoPy.
+
+## Fixation method
+
+The headset is firmly fixed to the subject's head using a headpost, ensuring a stable fixation between the headset and the subject. We are also developing a general version that does not rely on a headpost for fixation.
+
+## VR experiment build framework
+
+We utilize Unity to build our experimental environments. Additionally, we provide a framework to assist users in constructing their own experimental environments.
+
+### Features
+
+- Support SRP
+- Based on unity DTOS
+- Event center
+- Recording center
+- Device manager
+- Built-in eye-tracker controller
+ 
+## Behavioral training
+
+Non-human primates (NHP, Macaca mulaKa) will initially be trained using standard procedures to enter a custom-built primate chair and be comfortably transported to the lab. Once in the lab, we will use fluid-reward as the motivation for working on our tasks. They will be trained to fixate with high accuracy on a computer screen. This is a critically important baseline task for mapping receptive field locations and characteristics in early level visual areas.
+
+Once fixating successfully, they will be trained progressively to acclimatise to the VR rig. This will be done gradually, using positive reinforcement at all steps. We will first acclimatise the subjects to wearing the headset in the primate chair that was used for the fixation training. Then we will arach the harness to the arm, using physical treats in the environment to encourage preferred behaviour. Once the monkey is stable, we will combine the VR treadmill and headset and start the acclimatisation to navigating in the virtual environment. At first the environment will be simple, and forward ambulation will give regular juice rewards every virtual meter traversed in any direction. We will then encourage preferred paths using cues and targets in an open environment. Finally, we will train for the main task conditions.
+
+We will initially train two monkeys for the core data collection (year 1 to year 3), with at least one more monkey being trained from year 1/2 onwards to be used dependent on the experimental results. We will complete our experimental work towards the middle of year 3.
+
+# Work Plan & Schedule
+
+## Year 1
+
+- I will complete the development of a VR headset adapted for non-human primates, which will include at least the following components:
+  - Development of pose estimation algorithm
+  - Adaptation for OpenXR
+  - Firmware based on FreeRTOS
+  - Integration with VR treadmill
+  - Integration with SLAM or VIO algorithm
+- Adding a built-in eyetracker to the VR rig
+- Conducting the initial phase of subjects training to familiarize them with wearing the VR headset
+- Completing subjects training and commencing the behavioral experiments
+  
+## Year 2
+
+- We will begin to collect psychophysical data on the task 6-8 months
+- After we have stable behaviour and we are confident behavioural performance for each animal has hit a plateau, we will implant two electrode  in V1 bilaterally.  Surgery and recovery should take several weeks.
+- As subjects are already trained for fixation, we will use a monkey chair, a normal monitor and our eye tracker to measure the visual field locations and response field properties across the electrode probe positions.
+- Towards the end of year two, we will test how electrophysiological recordings during fully immersive VR works, optimising the task and so ware
+
+## Year 3
+
+- This year will be dedicated to finalising the collection of control data.
+- Releasing our Unity development framework, which is expected to be fully developed this year. After organizing it, we will make it open source, with the hope of assisting other neuroscience researchers in using Unity to build their experiments.
