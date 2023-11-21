@@ -2,3 +2,10 @@ _output/
 .quarto/
 references/
 /.quarto/
+/assets/imageSources/.*
+
+*.aux
+*.log
+*.pdf
+*.tex
+*.toc
