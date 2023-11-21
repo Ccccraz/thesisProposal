@@ -22,7 +22,7 @@ format:
   #   monofont: Cascadia Code
 
   pdf:
-    documentclass: article
+    documentclass: scrreprt
     mainfont: EB Garamond
     sansfont: EB Garamond
     mathfont: Garamond-Math
