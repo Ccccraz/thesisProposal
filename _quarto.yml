@@ -9,7 +9,7 @@ crossref:
 
 reference-section-title: references
 
-bibliography: C:\\Users\\ccccr\\repo\\documentation\\library\\myBibliography.bib
+bibliography: myBibliography.bib
 link-citations: true
 colorlinks: true
 
