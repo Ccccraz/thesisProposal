@@ -14,17 +14,17 @@ link-citations: true
 colorlinks: true
 
 format:
-  html:
-    mainfont: EB Garamond
-    sansfont: EB Garamond
-    mathfont: Garamond-Math
-    CJKmainfont: 思源宋体
-    monofont: Cascadia Code
-
-  # pdf:
-  #   documentclass: scrreprt
+  # html:
   #   mainfont: EB Garamond
   #   sansfont: EB Garamond
   #   mathfont: Garamond-Math
   #   CJKmainfont: 思源宋体
   #   monofont: Cascadia Code
+
+  pdf:
+    documentclass: article
+    mainfont: EB Garamond
+    sansfont: EB Garamond
+    mathfont: Garamond-Math
+    CJKmainfont: 思源宋体
+    monofont: Cascadia Code
