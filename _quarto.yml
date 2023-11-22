@@ -9,7 +9,8 @@ crossref:
 
 reference-section-title: references
 
-bibliography: myBibliography.bib
+bibliography: C:\\Users\\ccccr\\repo\\documentation\\library\\myBibliography.bib
+csl: C:\\Users\\ccccr\\Zotero\\styles\\cell.csl
 link-citations: true
 colorlinks: true
 
@@ -21,8 +22,15 @@ format:
   #   CJKmainfont: 思源宋体
   #   monofont: Cascadia Code
 
-  pdf:
-    documentclass: scrreprt
+  # pdf:
+  #   documentclass: scrreprt
+  #   mainfont: EB Garamond
+  #   sansfont: EB Garamond
+  #   mathfont: Garamond-Math
+  #   CJKmainfont: 思源宋体
+  #   monofont: Cascadia Code
+
+  docx: 
     mainfont: EB Garamond
     sansfont: EB Garamond
     mathfont: Garamond-Math
