@@ -1,38 +1,54 @@
+date: 2023-11-20
+author: 
+  - name: 胡杨
+    affiliation:
+      - ref: cebsit
+affiliations:
+  - id: cebsit
+    name: Center for Excellence in Brain Science and Intelligence Technology, Inst. of Neuroscience, Chinese Academy of Sciences, 320 Yueyang rd, Shanghai 200031, China
+papersize: a4
 project:
   output-dir: _output
-
 title-block-banner: true
 toc: true
 number-sections: true
 crossref: 
   chapters: false
-
-reference-section-title: references
-
-bibliography: C:\\Users\\ccccr\\repo\\documentation\\library\\myBibliography.bib
-csl: C:\\Users\\ccccr\\Zotero\\styles\\cell.csl
+reference-section-title: References
+bibliography: myBibliography.bib
+csl: cell.csl
 link-citations: true
 colorlinks: true
-
 format:
-  # html:
-  #   mainfont: EB Garamond
-  #   sansfont: EB Garamond
-  #   mathfont: Garamond-Math
-  #   CJKmainfont: 思源宋体
-  #   monofont: Cascadia Code
-
-  # pdf:
-  #   documentclass: scrreprt
-  #   mainfont: EB Garamond
-  #   sansfont: EB Garamond
-  #   mathfont: Garamond-Math
-  #   CJKmainfont: 思源宋体
-  #   monofont: Cascadia Code
-
-  docx: 
-    mainfont: EB Garamond
-    sansfont: EB Garamond
-    mathfont: Garamond-Math
-    CJKmainfont: 思源宋体
+  html:
+    mainfont: Alegreya
+    sansfont: Alegreya Sans
+    mathfont: Libertinus Math
+    CJKmainfont: PingFang SC
     monofont: Cascadia Code
+  pdf:
+    documentclass: scrreprt
+    mainfont: Alegreya
+    sansfont: Alegreya Sans
+    mathfont: Libertinus Math
+    CJKmainfont: PingFang SC
+    monofont: Cascadia Code
+    fontsize: 12pt
+    linestretch: 1.5
+    latex-clean: true
+    keep-tex: true
+  docx: 
+    mainfont: Alegreya
+    sansfont: Alegreya Sans
+    mathfont: Libertinus Math
+    CJKmainfont: PingFang SC
+    monofont: Cascadia Code
+  typst:
+    keep-typ: true
+    verbosity: INFO
+    mainfont: "Alegreya Sans"
+    fontsize: 12pt
+    header-includes: |
+      ```{=typst}
+      #set text(discretionary-ligatures: true, number-type: "old-style")
+      ```
